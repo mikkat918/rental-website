@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Property - RentHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> RentHome
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Browse Properties</a>
+                <a href="list-property.html" class="nav-link active">List Your Property</a>
+                <a href="#" class="nav-link btn-outline"><i class="fa-regular fa-user"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container main-content">
+        <div class="page-header">
+            <h1 class="page-title">List Your Property</h1>
+            <p class="page-subtitle">Have a property to rent? Fill out the form below and our team will get in touch
+                with you shortly to help list your property.</p>
+        </div>
+        <div class="property-grid">
+            <!-- Left Column: Form -->
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="propertyType">Property Type *</label>
+                            <input type="text" id="propertyType" name="propertyType"
+                                placeholder="e.g., Single Room, Apartment" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Property Location *</label>
+                        <input type="text" id="location" name="location" placeholder="Enter complete address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Additional Details</label>
+                        <textarea id="details" name="details" rows="5"
+                            placeholder="Tell us more about your property (number of rooms, amenities, rent expectations, etc.)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Property Details</button>
+                </form>
+            </div>
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3 class="sidebar-subtitle">Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:info@renthome.com" class="contact-link">info@renthome.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:5551234567" class="contact-link">(555) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <span class="contact-label">Office</span>
+                            <p class="contact-text">123 Main Street, Suite 100<br>City Center, ST 12345</p>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <h3 class="sidebar-subtitle">Why List With Us?</h3>
+                    <ul class="highlights-list">
+                        <li><i class="fa-solid fa-check"></i> Wide reach to potential tenants</li>
+                        <li><i class="fa-solid fa-check"></i> Professional property photos</li>
+                        <li><i class="fa-solid fa-check"></i> Verified tenant screening</li>
+                        <li><i class="fa-solid fa-check"></i> Quick listing approval</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated support team</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

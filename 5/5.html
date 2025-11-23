@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - RentHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> RentHome
+            </a>
+            <nav class="nav">
+                <a href="browse-properties.html" class="nav-link">Browse Properties</a>
+                <a href="list-property.html" class="nav-link">List Your Property</a>
+                <a href="login.html" class="nav-link btn-outline active"><i class="fa-regular fa-user"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container main-content auth-page">
+        <div class="auth-container">
+            <!-- Left Side: Promo -->
+            <div class="auth-promo">
+                <div class="promo-content">
+                    <h1 class="promo-title">Find Your Perfect Home</h1>
+                    <p class="promo-text">Join thousands of users who have found their ideal rental property through our
+                        platform.</p>
+                    <ul class="promo-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Verified listings from trusted landlords</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Instant notifications for new properties</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Secure and easy communication with owners</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right Side: Forms -->
+            <div class="auth-forms">
+                <div class="auth-tabs">
+                    <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+                    <button class="tab-btn" onclick="switchTab('register')">Register</button>
+                </div>
+                <!-- Login Form -->
+                <div id="login-form" class="auth-form-content active">
+                    <h2 class="auth-title">Welcome Back</h2>
+                    <p class="auth-subtitle">Enter your credentials to access your account</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login to Your Account</button>
+                    </form>
+                </div>
+                <!-- Register Form -->
+                <div id="register-form" class="auth-form-content">
+                    <h2 class="auth-title">Create Account</h2>
+                    <p class="auth-subtitle">Fill in your details to get started</p>
+                    <form action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-fullname">Full Name</label>
+                                <input type="text" id="reg-fullname" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-username">Username</label>
+                                <input type="text" id="reg-username" placeholder="johndoe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-email">Email Address</label>
+                            <input type="email" id="reg-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Password</label>
+                            <input type="password" id="reg-password" placeholder="Create a strong password" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reg-phone">Phone Number</label>
+                                <input type="tel" id="reg-phone" placeholder="+1 234 567 8900">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-dob">Date of Birth</label>
+                                <input type="date" id="reg-dob">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Create Your Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function switchTab(tabName) {
+            // Update Tab Buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            // Update Form Content
+            document.querySelectorAll('.auth-form-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName + '-form').classList.add('active');
+        }
+    </script>
+</body>
+</html>

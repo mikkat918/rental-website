@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - RentHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> RentHome
+            </a>
+            <nav class="nav">
+                <a href="browse-properties.html" class="nav-link">Browse Properties</a>
+                <a href="list-property.html" class="nav-link">List Your Property</a>
+                <a href="admin.html" class="nav-link btn-outline active"><i class="fa-regular fa-user"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container main-content">
+        <div class="dashboard-header">
+            <h1 class="page-title" style="text-align: left; margin-bottom: 5px;">Admin Dashboard</h1>
+            <p class="page-subtitle" style="text-align: left; margin-bottom: 30px;">Manage properties and inquiries</p>
+        </div>
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fa-regular fa-building stat-icon"></i>
+                    <span class="stat-label">Total Properties</span>
+                </div>
+                <div class="stat-value">24</div>
+                <div class="stat-desc">Active listings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fa-regular fa-envelope stat-icon"></i>
+                    <span class="stat-label">New Inquiries</span>
+                </div>
+                <div class="stat-value">8</div>
+                <div class="stat-desc">Pending responses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-header">
+                    <i class="fa-regular fa-file-lines stat-icon"></i>
+                    <span class="stat-label">Applications</span>
+                </div>
+                <div class="stat-value">15</div>
+                <div class="stat-desc">This month</div>
+            </div>
+        </div>
+        <!-- Add Property Form -->
+        <div class="add-property-container">
+            <h2 class="section-title">+ Add New Property</h2>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prop-title">Property Title *</label>
+                        <input type="text" id="prop-title" placeholder="Modern Single Bedroom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prop-type">Property Type *</label>
+                        <select id="prop-type" class="filter-select">
+                            <option>Select type</option>
+                            <option>Single Room</option>
+                            <option>Shared Room</option>
+                            <option>Apartment</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row three-col">
+                    <div class="form-group">
+                        <label for="prop-rent">Monthly Rent ($) *</label>
+                        <input type="number" id="prop-rent" placeholder="850" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prop-beds">Bedrooms *</label>
+                        <input type="number" id="prop-beds" placeholder="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prop-baths">Bathrooms *</label>
+                        <input type="number" id="prop-baths" placeholder="1" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prop-area">Area (sq ft) *</label>
+                        <input type="number" id="prop-area" placeholder="650" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prop-location">Location *</label>
+                        <input type="text" id="prop-location" placeholder="Downtown, City Center" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="prop-desc">Description *</label>
+                    <textarea id="prop-desc" rows="4"
+                        placeholder="Describe the property features, amenities, and highlights..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="prop-images">Property Images *</label>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="prop-images" multiple>
+                        <span class="file-upload-text">Choose Files No file chosen</span>
+                    </div>
+                    <p class="help-text">Upload multiple images (Max 10 images)</p>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    style="width: auto; padding-left: 30px; padding-right: 30px;">+ Add Property</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

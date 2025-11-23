@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Properties - RentHome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> RentHome
+            </a>
+            <nav class="nav">
+                <a href="browse-properties.html" class="nav-link active">Browse Properties</a>
+                <a href="list-property.html" class="nav-link">List Your Property</a>
+                <a href="#" class="nav-link btn-outline"><i class="fa-regular fa-user"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container main-content">
+        <div class="browse-header">
+            <h1 class="page-title" style="text-align: left; margin-bottom: 5px;">Browse Properties</h1>
+            <p class="page-subtitle" style="text-align: left; margin-bottom: 30px;">6 properties available</p>
+        </div>
+        <!-- Filters -->
+        <div class="filters-container">
+            <div class="filters-header">
+                <i class="fa-solid fa-sliders"></i> Filters
+            </div>
+            <div class="filters-row">
+                <div class="filter-group search-group">
+                    <input type="text" placeholder="Search location..." class="filter-input">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Prices</option>
+                        <option>$0 - $500</option>
+                        <option>$500 - $1000</option>
+                        <option>$1000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>All Types</option>
+                        <option>Single Room</option>
+                        <option>Shared Room</option>
+                        <option>Apartment</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option>Newest First</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Property Grid -->
+        <div class="browse-grid">
+            <!-- Card 1 -->
+            <a href="index.html" class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge">Single Room</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Modern Single Bedroom</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Downtown, City Center</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 1</span>
+                        <span><i class="fa-solid fa-bath"></i> 1</span>
+                        <span><i class="fa-regular fa-square"></i> 650 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $850 <span class="period">per month</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Card 2 -->
+            <div class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge" style="background-color: #00B4D8;">Shared Room</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Cozy Shared Room</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> University District</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 1</span>
+                        <span><i class="fa-solid fa-bath"></i> 1</span>
+                        <span><i class="fa-regular fa-square"></i> 500 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $450 <span class="period">per month</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge" style="background-color: #00B4D8;">Family Apartment</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Luxury Family Apartment</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Uptown, Premium Area</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 3</span>
+                        <span><i class="fa-solid fa-bath"></i> 2</span>
+                        <span><i class="fa-regular fa-square"></i> 1,500 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $2,200 <span class="period">per month</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge" style="background-color: #00B4D8;">Flat/Studio</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Contemporary Studio Flat</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Business District</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 1</span>
+                        <span><i class="fa-solid fa-bath"></i> 1</span>
+                        <span><i class="fa-regular fa-square"></i> 550 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $950 <span class="period">per month</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge" style="background-color: #00B4D8;">Double Room</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Bright Double Room</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Riverside Area</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 1</span>
+                        <span><i class="fa-solid fa-bath"></i> 1</span>
+                        <span><i class="fa-regular fa-square"></i> 600 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $700 <span class="period">per month</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="property-card">
+                <div class="card-image-container">
+                    <span class="badge badge-blue card-badge" style="background-color: #00B4D8;">Family Apartment</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Spacious Family Home</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Suburban Area</p>
+                    <div class="card-stats">
+                        <span><i class="fa-solid fa-bed"></i> 4</span>
+                        <span><i class="fa-solid fa-bath"></i> 2</span>
+                        <span><i class="fa-regular fa-square"></i> 2,000 sq ft</span>
+                    </div>
+                    <div class="card-price">
+                        $1,800 <span class="period">per month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

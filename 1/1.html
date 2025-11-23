@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentHome - Find Your Perfect Rental Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-house-chimney"></i> RentHome
+            </a>
+            <nav class="nav">
+                <a href="#" class="nav-link">Browse Properties</a>
+                <a href="#" class="nav-link">List Your Property</a>
+                <a href="#" class="btn btn-outline-sm"><i class="fa-regular fa-user"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Find Your Perfect <br> <span class="text-highlight">Rental Home</span></h1>
+            <p class="hero-subtitle">Discover comfortable and affordable rental properties. From single rooms to family
+                apartments, find your ideal space today.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Browse Properties <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-white">List Your Property</a>
+            </div>
+            <div class="search-bar">
+                <div class="search-input-group">
+                    <input type="text" placeholder="Enter location..." class="search-input">
+                </div>
+                <div class="search-input-group border-left">
+                    <select class="search-select">
+                        <option value="">Property Type</option>
+                        <option value="single">Single Room</option>
+                        <option value="shared">Shared Room</option>
+                        <option value="family">Family Apartment</option>
+                        <option value="studio">Studio Flat</option>
+                    </select>
+                </div>
+                <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i> Search Properties</button>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-regular fa-building"></i>
+                </div>
+                <h3>Wide Selection</h3>
+                <p>Browse through hundreds of verified properties across all price ranges</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Verified Listings</h3>
+                <p>All properties are verified by our team for your safety and peace of mind</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3>Quick Process</h3>
+                <p>Easy application process to get you into your new home faster</p>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Properties -->
+    <section class="properties">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Featured Properties</h2>
+                    <p class="section-subtitle">Hand-picked properties for you</p>
+                </div>
+                <a href="#" class="btn btn-outline-sm">View All</a>
+            </div>
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="card-image">
+                        <span class="badge badge-blue">Single Room</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Single Bedroom</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Downtown, City Center</p>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 1</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 650 sq ft</span>
+                        </div>
+                        <div class="price">
+                            $850 <span class="period">per month</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="card-image">
+                        <span class="badge badge-teal">Shared Room</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cozy Shared Room</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> University District</p>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 1</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 500 sq ft</span>
+                        </div>
+                        <div class="price">
+                            $450 <span class="period">per month</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="card-image">
+                        <span class="badge badge-orange">Family Apartment</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Luxury Family Apartment</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Uptown, Premium Area</p>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 3</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 1,500 sq ft</span>
+                        </div>
+                        <div class="price">
+                            $2,200 <span class="period">per month</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 4 -->
+                <div class="property-card">
+                    <div class="card-image">
+                        <span class="badge badge-blue">Flat/Studio</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Contemporary Studio Flat</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Business District</p>
+                        <div class="property-details">
+                            <span><i class="fa-solid fa-bed"></i> 1</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 550 sq ft</span>
+                        </div>
+                        <div class="price">
+                            $950 <span class="period">per month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container cta-content">
+            <h2>Have a Property to Rent?</h2>
+            <p>List your property with us and reach thousands of potential tenants</p>
+            <a href="#" class="btn btn-white">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>RentHome</h4>
+                <p>Your trusted partner in finding the perfect rental property.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Browse Properties</a></li>
+                    <li><a href="#">List Property</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Property Types</h4>
+                <ul>
+                    <li><a href="#">Single Rooms</a></li>
+                    <li><a href="#">Shared Rooms</a></li>
+                    <li><a href="#">Family Apartments</a></li>
+                    <li><a href="#">Studio Flats</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: info@renthome.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 RentHome. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
